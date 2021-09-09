@@ -34,18 +34,58 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/starter.css">
         <link rel="stylesheet" href="css/index.css">
         <title>Explosive Cashier</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+   
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- Elements Content -->
+                <a class="middle-panel navbar-brand" href="#">
+                    <img class="logo-up" src="img/logo.png" alt="" class="d-inline-block align-text-top"> Explosive Cashier
+                </a>
+            </div>
+        </nav>
+ 
+
+        <div class="Content"> 
+            <div class="Container-Content d-flex justify-content-center align-items-center"> 
+                <button type="button" class=" pop1 btn btn-lg btn-danger"> </button>
+            </div>
+        </div>  
+        
+
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+            <div class="bottom-panel container-fluid">
+                <a class="navbar-brand" href="#">Fixed bottom</a>
+            </div>
+        </nav>
+
+        <div id="menu1" class="modal fade menu" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
             </div>
         </div>
+
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script type="module" src="js/starter.js"></script>
         <script src="cordova.js"></script>
-        <script src="js/index.js"></script>
     </body>
+
+    <div id="pop1"> Prova </div>
+
 </html>
