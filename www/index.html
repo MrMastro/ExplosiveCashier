@@ -32,37 +32,39 @@
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/starter.css">
-        <link rel="stylesheet" href="css/index.css">
         <title>Explosive Cashier</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
     </head>
-    <body>
+
+    <body class="d-flex flex-column align-items-stretch">
    
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light bg-light border border-secondary">
             <div class="container-fluid">
                 <!-- Elements Content -->
-                <a class="middle-panel navbar-brand" href="#">
-                    <img class="logo-up" src="img/logo.png" alt="" class="d-inline-block align-text-top"> Explosive Cashier
+                <a class="top-panel navbar-brand" href="#">
+                    <img class="logo-up" src="img/logo.png" alt="" class="d-inline-block align-text-top"> Title
                 </a>
             </div>
         </nav>
  
 
-        <div class="Content"> 
-            <div class="Container-Content d-flex justify-content-center align-items-center"> 
-                <button type="button" class=" pop1 btn btn-lg btn-danger"> </button>
+        <div class="Content mh-100"> 
+            <div class="middle-panel d-flex justify-content-center align-items-center"> 
+                <button type="button" class=" pop1 btn btn-lg btn-danger"> Element </button>
             </div>
         </div>  
         
 
-        <nav class="navbar fixed-bottom navbar-light bg-light">
+        <nav class="navbar fixed-bottom navbar-light bg-light border border-secondary">
             <div class="bottom-panel container-fluid">
                 <a class="navbar-brand" href="#">Fixed bottom</a>
             </div>
         </nav>
 
+        <!-- MODAL -->
         <div id="menu1" class="modal fade menu" tabindex="-1">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -81,11 +83,10 @@
             </div>
         </div>
 
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script type="module" src="js/starter.js"></script>
+        <script src="js/jquery-3.5.1.min.js" ></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
         <script src="cordova.js"></script>
+        <script type="module" src="./js/index.js"></script>
     </body>
-
-    <div id="pop1"> Prova </div>
 
 </html>
